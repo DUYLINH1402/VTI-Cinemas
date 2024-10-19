@@ -1,0 +1,102 @@
+@use "./../cssBase.scss";
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
+  border-bottom: 1px solid #ccc;
+  .nav-content {
+    position: relative;
+    .search {
+      .input-search {
+        position: absolute;
+        display: inline-block;
+        width: 30%;
+        height: 30px;
+        border-radius: 15px;
+        // border-color: #e8e8e8;
+        transform: translateX(50%);
+      }
+      .input-search::placeholder {
+        padding-left: 35px;
+        font-size: 16px;
+      }
+      .search-icon {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 20px;
+        left: 50%;
+      }
+    }
+    .header {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px;
+
+      .header-left {
+        margin-left: 100px;
+        .title {
+          font-size: 1.2rem;
+        }
+        .header-logo {
+          display: inline-block;
+          position: absolute;
+          top: -14px;
+          left: 10px;
+          width: 100px;
+          height: 100px;
+          object-fit: cover;
+        }
+      }
+      .header-right {
+        .login-actions {
+          .action-link {
+            color: cssBase.$primary-color;
+            margin-right: 20px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+.sidebar {
+  position: fixed;
+  width: 80px;
+  // background-color: #e6f0ff;
+  top: 76px;
+  height: 100%;
+  z-index: 999;
+
+  .side-menu {
+    ul {
+      margin: 20px 0 0 5px;
+      li {
+        a {
+          color: cssBase.$primary-color;
+          text-decoration: none;
+          display: block;
+          margin-bottom: 15px;
+          border-radius: 15px;
+          text-align: center;
+          padding: 15px 0;
+          .menu-icon {
+            display: block;
+            margin: 0 auto 5px;
+            width: 30px;
+            height: 30px;
+          }
+        }
+        a:hover {
+          opacity: 0.9;
+          background: #ccc;
+        }
+      }
+    }
+  }
+}

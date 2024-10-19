@@ -1,0 +1,33 @@
+:root {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  scroll-behavior: smooth;
+}
+#root {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  text-align: center;
+}
+/*******  COMMON   ********/
+
+.content {
+  padding: 90px 20px 20px 100px;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  display: inline-block;
+  min-width: 98px;
+  background: #0f1b4c;
+  border-radius: 12px;
+  padding: 18px 16px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
