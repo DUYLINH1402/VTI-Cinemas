@@ -8,7 +8,7 @@
   z-index: 999;
   border-bottom: 1px solid #ccc;
   background-color: #eee;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 
   .nav-content {
     position: relative;
@@ -24,9 +24,7 @@
         display: flex;
         align-items: center;
         flex: 1;
-        .title {
-          font-size: 2.1rem;
-        }
+
         .header-logo {
           display: inline-block;
           width: 80%;
@@ -60,7 +58,7 @@
               text-decoration: none;
               display: block;
               text-align: center;
-              font-size: 1.8rem;
+              font-size: 1.6rem;
             }
             a:hover {
               border-radius: 15px;
