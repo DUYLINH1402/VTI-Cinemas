@@ -11,7 +11,7 @@ export const ErrorPage = () => {
       <div className="content">
         <div id="error-page" className="error-page">
           <div>
-            <h2 className="message">Page not found</h2>
+            <h2 className="message">Không tìm thấy trang</h2>
             <div className="notFoundImage">
               <img id="notFound" src={errorPage} alt="Page Not Found" />
             </div>

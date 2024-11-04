@@ -1,20 +1,19 @@
 :root {
   font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;
   scroll-behavior: smooth;
-}
-#root {
-  box-sizing: border-box;
   font-size: 62.5%;
+  box-sizing: border-box;
   text-align: center;
 }
 /*******  COMMON   ********/
-
-.content {
-  padding: 90px 20px 20px 100px;
-}
 a {
   text-decoration: none;
+}
+
+.content {
+  height: 1000px;
+  width: 100%;
+  padding-top: 85px;
 }
 .btn {
   display: inline-block;
@@ -23,7 +22,7 @@ a {
   border-radius: 12px;
   padding: 18px 16px;
   text-align: center;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
   color: #fff;
 }
