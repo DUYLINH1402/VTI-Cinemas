@@ -1,4 +1,4 @@
-@use "./../cssBase.scss";
+@use "./../../cssBase.scss";
 
 .navbar {
   position: fixed;
@@ -27,7 +27,7 @@
 
         .header-logo {
           display: inline-block;
-          width: 80%;
+          width: 95%;
           object-fit: cover;
         }
       }
@@ -46,7 +46,7 @@
                 text-align: center;
                 padding: 5px;
                 width: 200px;
-                font-size: 1.6rem;
+                font-size: 1.5rem;
                 font-family: "Poppins", sans-serif;
                 border: 1px solid #6c6969;
                 border-radius: 8px;

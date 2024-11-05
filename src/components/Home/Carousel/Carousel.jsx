@@ -2,7 +2,7 @@ import { Carousel } from "antd";
 import "./carousel.scss";
 import axios from "axios";
 import { React, useState, useEffect } from "react";
-import { CardCarousel } from "../Cards/Cards";
+import { CardCarousel } from "../../Cards/Cards";
 // import { APICarousel } from "./API";
 
 export const CarouselSlide = () => {
@@ -10,10 +10,15 @@ export const CarouselSlide = () => {
   // Call APICarousel
   useEffect(() => {
     axios
-      .get("https://670c940a7e5a228ec1d0ba61.mockapi.io/cinemas/carousel")
-      .then((listCarousel) => {
-        console.log(listCarousel);
-        setImgCarousel(listCarousel.data);
+      .get("https://vticinema-default-rtdb.firebaseio.com/Banners.json") // Thêm ".json" vào cuối URL
+      .then((response) => {
+        const data = response.data;
+        const bannersArray = Object.keys(data).map((key) => ({
+          ...data[key],
+          id: key, // Lưu key Firebase làm ID
+        }));
+        console.log(bannersArray);
+        setImgCarousel(bannersArray);
       })
       .catch((err) => console.log(err));
   }, []);

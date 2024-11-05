@@ -2,7 +2,8 @@
 import { useRouteError } from "react-router-dom";
 import errorPage from "./../../../src/assets/image/errorPage.svg";
 import "./errorPage.scss";
-import { Header } from "../Home/Header";
+import { Header } from "../Home/Header/Header";
+import { Footer } from "../Home/Footer/Footer";
 
 export const ErrorPage = () => {
   return (
@@ -18,6 +19,7 @@ export const ErrorPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

@@ -1,12 +1,12 @@
 import "./footer.scss";
-import logo from "./../../assets/image/logo.png";
+import logo from "./../../../assets/image/logo.png";
+import logo_da_thong_bao_bct from "./../../../assets/image/logo_da_thong_bao_bct.webp";
 import {
   CopyrightOutlined,
   FacebookFilled,
   TwitterSquareFilled,
   InstagramFilled,
 } from "@ant-design/icons";
-import logo_da_thong_bao_bct from "./../../assets/image/logo_da_thong_bao_bct.webp";
 import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
@@ -18,10 +18,10 @@ export const Footer = () => {
           </Link>
           <ul>
             <li>
-              <Link to="#">Tuyển dụng</Link>
+              <Link to="#">Giới thiệu</Link>
             </li>
             <li>
-              <Link to="#">Giới thiệu</Link>
+              <Link to="#">Tuyển dụng</Link>
             </li>
             <li>
               <Link to="#">FAQ</Link>
